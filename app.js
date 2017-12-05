@@ -9,4 +9,8 @@ function ToDoController() {
 		this.tasks.push( this.taskName );
 		this.taskName = '';
 	};
+
+	this.deleteTask = (index) => {
+		this.tasks.splice(index, 1);
+	};
 }
